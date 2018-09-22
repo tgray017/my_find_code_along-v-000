@@ -6,5 +6,9 @@ def my_find(collection)
   while i < collection.length
     array << yield(collection[i])
   end
-  array[0]
+  if array.length > 0
+    array[0]
+  else
+    nil
+  end
 end
