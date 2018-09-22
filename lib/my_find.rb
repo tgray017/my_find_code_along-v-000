@@ -12,3 +12,5 @@ def my_find(collection)
     nil
   end
 end
+
+my_find()
