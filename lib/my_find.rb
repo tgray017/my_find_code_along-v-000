@@ -5,9 +5,12 @@ def my_find(collection)
   array = []
   while i < collection.length
     array << yield(collection[i])
-    i += 1 
+    if array[-1] == true 
+      collection[i]
+    else  
+      i += 1
+    end
   end
-  array.any?
 end
 
 collection = (1..100).to_a
